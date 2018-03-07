@@ -1,0 +1,1414 @@
+@charset "UTF-8";
+
+// Argus Fonts
+@font-face {
+  font-family: 'Encode Sans';
+  src: url(../fonts/EncodeSans-Regular.eot);
+  src: url(../fonts/EncodeSans-Regular.eot?#iefix) format('embedded-opentype'), url(../fonts/EncodeSans-Regular.woff2) format('woff2'), url(../fonts/EncodeSans-Regular.woff) format('woff'), url(../fonts/EncodeSans-Regular.ttf) format('truetype'), url(../fonts/EncodeSans-Regular.svg#EncodeSans-Regular) format('svg');
+  font-weight: normal;
+  font-style: normal
+}
+@font-face {
+  font-family: 'Encode Sans';
+  src: url(../fonts/EncodeSans-SemiBold.eot);
+  src: url(../fonts/EncodeSans-SemiBold.eot?#iefix) format('embedded-opentype'), url(../fonts/EncodeSans-SemiBold.woff2) format('woff2'), url(../fonts/EncodeSans-SemiBold.woff) format('woff'), url(../fonts/EncodeSans-SemiBold.ttf) format('truetype'), url(../fonts/EncodeSans-SemiBold.svg#EncodeSans-SemiBold) format('svg');
+  font-weight: 600;
+  font-style: normal
+}
+@font-face {
+  font-family: 'Encode Sans Narrow';
+  src: url(../fonts/EncodeSansNarrow-SemiBold.eot);
+  src: url(../fonts/EncodeSansNarrow-SemiBold.eot?#iefix) format('embedded-opentype'), url(../fonts/EncodeSansNarrow-SemiBold.woff2) format('woff2'), url(../fonts/EncodeSansNarrow-SemiBold.woff) format('woff'), url(../fonts/EncodeSansNarrow-SemiBold.ttf) format('truetype'), url(../fonts/EncodeSansNarrow-SemiBold.svg#EncodeSansNarrow-SemiBold) format('svg');
+  font-weight: 600;
+  font-style: normal
+}
+@font-face {
+  font-family: 'Interstate';
+  src: url(../fonts/Interstate-Bold.eot);
+  src: url(../fonts/Interstate-Bold.eot?#iefix) format('embedded-opentype'), url(../fonts/Interstate-Bold.woff2) format('woff2'), url(../fonts/Interstate-Bold.woff) format('woff'), url(../fonts/Interstate-Bold.ttf) format('truetype'), url(../fonts/Interstate-Bold.svg#Interstate-Bold) format('svg');
+  font-weight: bold;
+  font-style: normal
+}
+@font-face {
+  font-family: 'Interstate';
+  src: url(../fonts/Interstate-Regular.eot);
+  src: url(../fonts/Interstate-Regular.eot?#iefix) format('embedded-opentype'), url(../fonts/Interstate-Regular.woff2) format('woff2'), url(../fonts/Interstate-Regular.woff) format('woff'), url(../fonts/Interstate-Regular.ttf) format('truetype'), url(../fonts/Interstate-Regular.svg#Interstate-Regular) format('svg');
+  font-weight: normal;
+  font-style: normal
+}
+@font-face {
+  font-family: 'Interstate';
+  src: url(../fonts/Interstate-Light.eot);
+  src: url(../fonts/Interstate-Light.eot?#iefix) format('embedded-opentype'), url(../fonts/Interstate-Light.woff2) format('woff2'), url(../fonts/Interstate-Light.woff) format('woff'), url(../fonts/Interstate-Light.ttf) format('truetype'), url(../fonts/Interstate-Light.svg#Interstate-Light) format('svg');
+  font-weight: 300;
+  font-style: normal
+}
+@font-face {
+  font-family: 'Interstate';
+  src: url(../fonts/Interstate-ExtraLight.eot);
+  src: url(../fonts/Interstate-ExtraLight.eot?#iefix) format('embedded-opentype'), url(../fonts/Interstate-ExtraLight.woff2) format('woff2'), url(../fonts/Interstate-ExtraLight.woff) format('woff'), url(../fonts/Interstate-ExtraLight.ttf) format('truetype'), url(../fonts/Interstate-ExtraLight.svg#Interstate-ExtraLight) format('svg');
+  font-weight: 200;
+  font-style: normal
+}
+@font-face {
+  font-family: 'Minion Pro';
+  src: url(../fonts/MinionPro-Regular.eot);
+  src: url(../fonts/MinionPro-Regular.eot?#iefix) format('embedded-opentype'), url(../fonts/MinionPro-Regular.woff2) format('woff2'), url(../fonts/MinionPro-Regular.woff) format('woff'), url(../fonts/MinionPro-Regular.ttf) format('truetype'), url(../fonts/MinionPro-Regular.svg#MinionPro-Regular) format('svg');
+  font-weight: normal;
+  font-style: normal
+}
+
+// Bootstrap Glyphs
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url(../fonts/glyphicons-halflings-regular.eot);
+  src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'), url(../fonts/glyphicons-halflings-regular.woff2) format('woff2'), url(../fonts/glyphicons-halflings-regular.woff) format('woff'), url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'), url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
+}
+
+// Font Awesome
+@import "../../node_modules/font-awesome/scss/font-awesome.scss";
+
+// AWM Site Branding Overrides
+
+// COLORS
+$white: #fff;
+$grey-AA: #231f20;
+$silver-AA: #5d6770;
+$silver-AB: #e9e7e7;
+$silver-AC: #5d6770;
+$silver-AD: #3d4144;
+$silver-AE: #dadada;
+$silver-AF: #e8e9ee;
+$silver-AG: #939598;
+$blue-AA: #2c3950;
+$blue-AB: #d6f9ff;
+$blue-AC: #0079c1;
+$blue-AD: #293852;
+$blue-AE: #1f71ac;
+$blue-AF: #d2e3ee;
+$blue-AG: #1178bb;
+$blue-AH: #409ad0;
+$blue-AI: #25aae1;
+$red-AA: #ff5959;
+$orange-AA: #f68b1e;
+$green-AA: #dcd087;
+$green-AB: #817f6f;
+$green-AC: #aab2a9;
+$green-AD: #a2e7a7;
+$green-AE: #22b24c;
+$purple-AA: #ac2088;
+
+// --- GENERAL STYLES
+// Universal
+body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*::-moz-selection,
+*::selection {
+  color: $white;
+  background-color: $red-AA;
+}
+.awm-background,
+footer {
+  background-color: $blue-AA;
+}
+.topbar-menu,
+.header-v8 .mega-menu .nav {
+  justify-content: flex-end;
+}
+#footer .ag-footer-links {
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+.hero-with-breadcrumb,
+.hero-with-breadcrumb-container {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.header-v8 .nav > li > a {
+  color: $blue-AD;
+}
+.awm-navigation {
+  .call-to-action {
+    font-family: "Interstate";
+    font-weight: bold!important;
+  }
+}
+
+// BOOTSTRAP OVERRIDES
+.btn.btn-primary {
+  font-weight: bold;
+  font-family: "Interstate";
+}
+.navbar > .container .navbar-brand,
+.navbar > .container-fluid .navbar-brand {
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+  }
+}
+.top-nav-container {
+  .topbar-list {
+    .link {
+      margin-right: 8px;
+      padding: 7px 3px 3px 3px;
+      border-bottom: 4px solid transparent;
+      // padding: 20px 3px 10px;
+      &--btn {
+        padding: 7px 0 7px 10px;
+      }
+    }
+    .current {
+      border-bottom: 4px solid $red-AA;
+      padding: 22px 3px 18px;
+    }
+  }
+}
+// .header-v8 {
+//   .nav > li a:active,
+//   .nav > li a.active {
+//     background-color: #eee;
+//   }
+// }
+
+
+// SECTION
+.site--slider {
+  @media screen and (max-width: 768px) and (max-width: 992px) {
+    #heronav {
+      top: 40%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .carousel .carousel-indicators {
+      bottom: 0;
+    }
+  }
+  &-text {
+    display: block;
+  }
+  &-summary {
+    font-weight: normal;
+  }
+  &-link {
+    font-family: "Interstate";
+    font-weight: bold;
+    min-width: 274px;
+    width: auto!important;
+    @media screen and (max-width: 480px) {
+      display: block;
+      margin-bottom: 60px;
+      width: 100%!important;
+    }
+  }
+}
+.site--header {
+  position: relative;
+  // background: $silver-AF;
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  padding-top: 90px;
+  padding-bottom: 70px;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 60%;
+    background: rgba(232,233,238,1);
+    background: -moz-linear-gradient(left, rgba(232,233,238,1) 0%, rgba(232,233,238,0.52) 48%, rgba(232,233,238,0) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(232,233,238,1)), color-stop(48%, rgba(232,233,238,0.52)), color-stop(100%, rgba(232,233,238,0)));
+    background: -webkit-linear-gradient(left, rgba(232,233,238,1) 0%, rgba(232,233,238,0.52) 48%, rgba(232,233,238,0) 100%);
+    background: -o-linear-gradient(left, rgba(232,233,238,1) 0%, rgba(232,233,238,0.52) 48%, rgba(232,233,238,0) 100%);
+    background: -ms-linear-gradient(left, rgba(232,233,238,1) 0%, rgba(232,233,238,0.52) 48%, rgba(232,233,238,0) 100%);
+    background: linear-gradient(to right, rgba(232,233,238,1) 0%, rgba(232,233,238,0.52) 48%, rgba(232,233,238,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e9ee', endColorstr='#e8e9ee', GradientType=1 );
+  }
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  @media screen and (max-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &::before {
+      content: "";
+      background: linear-gradient(to right,rgba(0,121,193,.85),rgba(0,121,193,.65));
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      position: absolute;
+    }
+  }
+  &-label {
+    margin: 0 0 30px;
+    padding: 0;
+    color: $blue-AC;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: normal;
+    text-transform: uppercase;
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+      font-size: 20px;
+      margin: 0 0 20px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      font-size: 18px;
+      margin: 0 0 20px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+      margin: 0 0 15px;
+      color: $white;
+    }
+  }
+  &-heading {
+    margin: 0 0 30px;
+    padding: 0;
+    color: $blue-AD;
+    font-size: 70px;
+    font-weight: 300;
+    line-height: normal;
+    &-text {
+      display: block;
+    }
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+      font-size: 50px;
+      margin: 0 0 20px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      font-size: 36px;
+      margin: 0 0 20px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+      margin: 0 0 15px;
+      color: $white;
+    }
+  }
+  &-content {
+    margin: 0 0 30px;
+    padding: 0;
+    max-width: 600px;
+    color: $silver-AD;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: normal;
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+      font-size: 20px;
+      margin: 0 0 20px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      font-size: 18px;
+      margin: 0 0 20px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+      margin: 0 0 15px;
+      color: $white;
+    }
+  }
+  &-link {
+    min-width: 270px;
+    font-weight: bold;
+    font-family: "Interstate";
+  }
+  &-highlighter {
+    padding: 5px;
+    display: inline-block;
+    background: $green-AD;
+  }
+}
+.site--banner {
+  position: relative;
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  &::before {
+    content: '';
+    background: rgba(0, 121, 193, .75);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+  &-wrap {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    @media screen and (max-width: 768px) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+  &-heading {
+    margin: 0 0 30px;
+    padding: 0;
+    color: $white;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: normal;
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+      font-size: 36px;
+      margin: 0 0 20px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      font-size: 28px;
+      margin: 0 0 20px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+      margin: 0 0 15px;
+    }
+  }
+  &-content {
+    margin: 0;
+    padding: 0;
+    color: $white;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: normal;
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+      font-size: 20px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      font-size: 18px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+  &-compact {
+    .site--banner-heading {
+      margin: 0;
+      @media screen and (min-width: 992px) and (max-width: 1200px) {
+        margin: 0;
+      }
+      @media screen and (min-width: 768px) and (max-width: 992px) {
+        margin: 0;
+      }
+      @media screen and (max-width: 768px) {
+        margin: 0;
+      }
+    }
+  }
+}
+.site--content {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  @media screen and (max-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  p {
+    font-size: 18px;
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+  a:not(.btn),
+  a:not(.btn-primary) {
+    color: $blue-AE;
+    font-size: inherit;
+    &:link,
+    &:active
+    &:visited,
+    &:focus {
+      color: $blue-AE;
+    }
+  }
+  h3 {
+    margin: 30px 0 10px;
+  }
+  &-link {
+    color: $blue-AE;
+    &:link,
+    &:active
+    &:visited,
+    &:focus {
+      color: $blue-AE;
+    }
+  }
+}
+.site--footer {
+  @media screen and (max-width: 768px) {
+    .footer-flag,
+    .footer-info {
+      text-align: left;
+    }
+    &-footlinks {
+      display: inline-block;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    &-footlinks {
+      display: inline-block;
+    }
+  }
+  .footer-flag {
+    img {
+      width: 23px;
+      height: 16px;
+    }
+  }
+  &-copyright {
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+      font-size: 14px;
+    }
+    @media screen and (max-width: 768px) {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+// CARDS
+.card--chart {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: $silver-AE;
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (max-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  &-heading {
+    margin-bottom: 20px;
+    color: $blue-AD;
+    line-height: normal;
+    text-transform: uppercase;
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+      font-size: 24px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      font-size: 22px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+  &-content {
+    font-size: 24px;
+    color: $blue-AD;
+    font-weight: 300;
+    margin-bottom: 30px;
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+      font-size: 20px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      font-size: 18px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+  &-diagram {
+    width: 100%;
+    @media screen and (max-width: 768px) {
+      max-width: 320px;
+    }
+  }
+  &-tbl {
+    td {
+      padding: 0 15px 0 0;
+      color: $blue-AD;
+      font-weight: 300;
+    }
+    @media screen and (min-width: 1200px) {
+      td {
+        font-size: 24px;
+      }
+    }
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+      td {
+        font-size: 20px;
+      }
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      td {
+        font-size: 18px;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      margin-bottom: 30px;
+      td {
+        font-size: 16px;
+      }
+    }
+  }
+  &-sign {
+    display: block;
+    width: 40px;
+    height: 20px;
+  }
+  &-sign-lg {
+    background: $blue-AG;
+  }
+  &-sign-md {
+    background: $green-AA;
+  }
+  &-sign-sm {
+    background: $green-AB;
+  }
+  &-sign-xs {
+    background: $green-AC;
+  }
+  @media screen and (min-width: 768px) {
+    .card--chart-heading,
+    .card--chart-heading+.card--chart-content {
+      text-align: center;
+    }
+  }
+}
+.card--team {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background: $silver-AE no-repeat url("../images/awm-team-bg.png");
+  background-position: bottom right;
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (max-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  &-thumb {
+    width: 100%;
+  }
+  &-title {
+    color: $blue-AD;
+    font-size: 36px;
+    line-height: normal;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    @media screen and (max-width: 1200px) {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+  }
+  &-caption {
+    color: $blue-AD;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 1200px) {
+      max-width: 100%;
+    }
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+      font-size: 20px;
+      margin-bottom: 15px;
+      max-width: 750px;
+    }
+    @media screen and (max-width: 992px) {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+  }
+  &-highlighter {
+    padding: 5px;
+    display: inline-block;
+    background: $green-AD;
+  }
+  &-heading {
+    color: $silver-AA;
+    font-size: 20px;
+    line-height: normal;
+  }
+  &-content {
+    color: $silver-AA;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: normal;
+  }
+  &-link {
+    color: $blue-AE;
+    font-size: 16px;
+    line-height: normal;
+    text-transform: uppercase;
+    &:link,
+    &:active
+    &:visited,
+    &:focus {
+      color: $blue-AE;
+    }
+  }
+  &-wrap {
+    // height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    background-color: $white;
+    margin-bottom: 30px;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 30px;
+    }
+  }
+  &-header {
+    margin: 0;
+    padding: 0;
+    .card--team-heading {
+      margin: 0;
+      padding: 20px 10px 5px;
+    }
+    .card--team-content {
+      margin: 0;
+      padding: 0 15px 10px;
+    }
+  }
+  &-footer {
+    margin: 0;
+    padding: 40px 15px 30px;
+    background: $white;
+    @media screen and (max-width: 768px) {
+      padding: 15px;
+    }
+  }
+  &-links {
+    .card--team-link:first-of-type {
+      margin-right: 40px;
+    }
+  }
+  &-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      &:before,
+      &:after {
+        content: normal;
+      }
+    }
+  }
+  &-listitem {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &-listitem:last-of-type {
+    .card--team-wrap {
+      margin-bottom: 0;
+    }
+  }
+}
+.card--portfolio {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  // background-color: $silver-AC;
+  background: $silver-AE no-repeat url("../images/awm-team-bg.png");
+  background-position: bottom right;
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (max-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  &-caption {
+    color: $blue-AD;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 1200px) {
+      max-width: 100%;
+    }
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+      font-size: 20px;
+      margin-bottom: 15px;
+      max-width: 750px;
+    }
+    @media screen and (max-width: 992px) {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+  }
+  &-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      &:before,
+      &:after {
+        content: normal;
+      }
+    }
+  }
+  &-listitem {
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  // &-listitem {
+  //   margin-bottom: 30px;
+  // }
+  &-wrap {
+    // height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding: 40px;
+    background-color: $white;
+  }
+  &-heading {
+    color: $silver-AA;
+    font-size: 20px;
+    line-height: normal;
+    font-weight: normal;
+    margin: 15px 0;
+    padding: 0;
+  }
+  &-content {
+    color: $silver-AA;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+  }
+  &-link {
+    &:link,
+    &:active
+    &:visited,
+    &:focus {
+      font-size: inherit;
+      color: $blue-AD;
+      text-decoration: underline;
+    }
+  }
+  &-blurb {
+    color: $blue-AD;
+    font-weight: 300;
+    font-size: 24px;
+    margin: 50px 0 0;
+    padding: 0;
+    line-height: normal;
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      margin: 30px 0 0;
+      font-size: 20px;
+    }
+    @media screen and (max-width: 768px) {
+      margin: 0;
+      font-size: 18px;
+    }
+  }
+}
+.card--funds {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background: transparent no-repeat url("../images/awm-team-bg.png");
+  background-position: bottom right;
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (max-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  &-thumb {
+    width: auto;
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      max-width: 150px;
+    }
+    @media screen and (max-width: 768px) {
+      max-width: 130px;
+    }
+  }
+  &-caption {
+    color: $blue-AD;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width: 1200px) {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+    @media screen and (min-width: 768px) {
+      max-width: 750px;
+    }
+    &-fullwidth {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  &-wrap {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  &-header {
+    @media screen and (max-width: 768px) {
+      text-align: left;
+    }
+  }
+  &-section {
+    text-align: left;
+    margin: 0 60px 0 40px;
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+      margin: 0 30px 0 15px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      margin: 0 15px;
+    }
+    @media screen and (max-width: 768px) {
+      margin: 0;
+    }
+  }
+  &-footer {
+    background-color: transparent;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-self: center;
+    }
+    @media screen and (max-width: 768px) {
+      text-align: left;
+    }
+  }
+  &-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  &-listitem {
+    @media screen and (max-width: 768px) {
+      border-bottom: 1px solid $silver-AD;
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+  }
+  &-h2 {
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: normal;
+    text-transform: uppercase;
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+      font-size: 20px;
+      margin: 0 0 10px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      font-size: 20px;
+      margin: 0 0 10px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+      margin: 20px 0 10px;
+    }
+    &-medium {
+      text-transform: none;
+    }
+    &-small {
+      font-size: 18px;
+      font-weight: normal;
+      text-transform: none;
+    }
+  }
+  &-h3 {
+    margin: 0 0 10px;
+    padding: 0;
+    color: $grey-AA;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: normal;
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+      font-size: 18px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      font-size: 18px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+  &-p {
+    margin: 0 0 15px;
+    padding: 0;
+    color: $silver-AD;
+    font-weight: normal;
+    line-height: normal;
+    @media screen and (max-width: 768px) {
+      margin: 0 0 10px;
+    }
+  }
+  &-link {
+    font-family: "Interstate";
+    font-weight: bold;
+    font-size: 16px;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 10px;
+      max-width: 200px;
+      display: inline-block;
+    }
+  }
+  &-listitem {
+    margin-bottom: 20px;
+    &-conservative {
+      .card--funds-h2 {
+        color: $silver-AG;
+      }
+    }
+    &-balanced {
+      .card--funds-h2 {
+        color: $blue-AI;
+      }
+    }
+    &-growth {
+      .card--funds-h2 {
+        color: $green-AE;
+      }
+    }
+    &-aggressive {
+      .card--funds-h2 {
+        color: $orange-AA;
+      }
+    }
+    &-moderate {
+      .card--funds-h2 {
+        color: $purple-AA;
+      }
+    }
+  }
+  &-listitem:last-of-type {
+    .card--funds-wrap {
+      margin-bottom: 0;
+    }
+  }
+  &.card--funds-primary-bg {
+    background-color: $silver-AE;
+  }
+  &.card--funds-secondary-bg {
+    background-color: $blue-AF;
+  }
+}
+.card--features {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background: transparent no-repeat url("../images/awm-team-bg.png");
+  background-position: bottom right;
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (max-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  &-thumb {
+    width: 100%;
+  }
+  &-caption {
+    color: $blue-AD;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width: 1200px) {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+    @media screen and (min-width: 768px) {
+      max-width: 750px;
+    }
+    &-fullwidth {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  &-heading {
+    color: $silver-AA;
+    font-size: 20px;
+    line-height: normal;
+  }
+  &-content {
+    color: $silver-AA;
+    font-size: 16px;
+    line-height: normal;
+    font-weight: normal;
+  }
+  &-highlighter {
+    padding: 5px;
+    display: inline-block;
+    background: $green-AD;
+  }
+  &-link {
+    color: $blue-AE;
+    display: block;
+    font-size: 16px;
+    text-transform: uppercase;
+    &:link,
+    &:active
+    &:visited,
+    &:focus {
+      color: $blue-AE;
+    }
+  }
+  &-blurb {
+    color: $blue-AD;
+    font-weight: 300;
+    font-size: 24px;
+    margin: 50px 0 0;
+    padding: 0;
+    line-height: normal;
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      margin: 30px 0 0;
+      font-size: 20px;
+    }
+    @media screen and (max-width: 768px) {
+      margin: 30px 0 0;
+      font-size: 18px;
+    }
+  }
+  &-wrap {
+    // height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    background-color: $white;
+    // @media screen and (max-width: 768px) {
+    //   margin-bottom: 30px;
+    // }
+  }
+  &-wraptop {
+    justify-content: flex-start;
+  }
+  &-header {
+    margin: 0;
+    padding: 0;
+    .card--features-heading {
+      margin: 0;
+      padding: 20px 35px 15px;
+      @media screen and (max-width: 768px) {
+        padding: 20px 15px;
+      }
+    }
+    .card--features-content {
+      margin: 0;
+      padding: 0 35px 10px;
+      @media screen and (max-width: 768px) {
+        padding: 0 15px 10px;
+      }
+    }
+  }
+  &-footer {
+    margin: 0;
+    padding: 15px 35px 30px;
+    background: $white;
+    @media screen and (max-width: 768px) {
+      padding: 15px;
+    }
+  }
+  &-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      &:before,
+      &:after {
+        content: normal;
+      }
+    }
+  }
+  &-listitem {
+    margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &-listitem:last-of-type {
+    .card--features-wrap {
+      margin-bottom: 0;
+    }
+  }
+  &.card--features-primary-bg {
+    background-color: $silver-AE;
+  }
+  &.card--features-secondary-bg {
+    background-color: $blue-AF;
+  }
+}
+.card--summary {
+  padding-top: 110px;
+  padding-bottom: 110px;
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (max-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  &-heading {
+    color: $blue-AD;
+    font-size: 36px;
+    margin-bottom: 20px;
+    line-height: normal;
+    text-transform: uppercase;
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+      font-size: 24px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      font-size: 22px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+  &-content {
+    color: $silver-AD;
+    font-weight: 300;
+    font-size: 24px;
+    margin-bottom: 20px;
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+      font-size: 20px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      font-size: 18px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    &-small {
+      font-size: 18px;
+      max-width: 768px;
+      margin: auto;
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+      }
+    }
+  }
+  &-link {
+    color: $blue-AE;
+    &:link,
+    &:active
+    &:visited,
+    &:focus {
+      color: $blue-AE;
+      text-decoration: underline;
+      // font-family: "Interstate";
+      // font-weight: bold;
+    }
+  }
+}
+.card--testimonial {
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  // background: $blue-AB;
+  background: $white no-repeat url("../images/awm-testimonial-bg.png");
+  @media screen and (min-width: 1400px) {
+    background-size: contain;
+    background-position: left center;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1400px) {
+    background-size: cover;
+    background-position: -200px center;
+  }
+  @media screen and (min-width: 992px) and (max-width: 1200px) {
+    background-size: cover;
+    background-position: -200px center;
+  }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-size: cover;
+    background-position: -200px center;
+  }
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-size: cover;
+    background-position: -150px center;
+  }
+  @media screen and (max-width: 480px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-size: cover;
+    background-position: -150px center;
+  }
+  @media screen and (max-width: 1200px) {
+    &::before {
+      position: absolute;
+      content: '';
+      z-index: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+  }
+  &-blockquote {
+    padding: 0;
+    margin: 0 0 15px;
+    border: none;
+    color: $blue-AC;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    @media screen and (max-width: 1200px) {
+      color: $white;
+      font-size: 20px;
+    }
+  }
+  &-cite {
+    color: $silver-AA;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    @media screen and (max-width: 1200px) {
+      color: $white;
+      font-size: 16px;
+    }
+  }
+}
+.card--callout {
+  color: $silver-AA;
+  background: $silver-AB;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (max-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  &-content {
+    font-size: 24px;
+    font-weight: 300;
+    color: $silver-AC;
+    margin: 0 auto 30px;
+    max-width: 600px;
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+  &-link {
+    font-weight: bold;
+    font-size: 16px;
+    min-width: 250px;
+    font-family: "Interstate";
+  }
+  &-primary {
+    background: $silver-AB;
+  }
+  &-secondary {
+    background: $white;
+  }
+  &-tertiary {
+    background: $white;
+    .card--callout-content {
+      font-size: 18px;
+      max-width: 80%;
+      @media screen and (max-width: 768px) {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+// MODALS
+.modal {
+  @media screen and (min-width: 992px) {
+    .modal-dialog {
+      width: 950px;
+      margin: 30px auto;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .modal-dialog {
+      width: 750px;
+      margin: 30px auto;
+    }
+  }
+  &-thumb {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+  &-designation {
+    margin-bottom: 0;
+  }
+  &-body {
+    p {
+      font-weight: normal;
+      font-size: 14px;
+    }
+    p:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
