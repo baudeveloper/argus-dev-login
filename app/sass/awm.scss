@@ -455,9 +455,6 @@ footer {
     .footer-info {
       text-align: left;
     }
-    &-footlinks {
-      display: inline-block;
-    }
   }
   @media screen and (max-width: 480px) {
     &-footlinks {
@@ -478,6 +475,27 @@ footer {
       display: block;
       margin-top: 15px;
       margin-bottom: 15px;
+    }
+  }
+  &-footlinks {
+    &:after {
+      content: "|";
+      margin-right: 5px;
+      padding-left: 5px;
+    }
+    &:last-of-type {
+      &:after {
+        content: "";
+      }
+    }
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+      &:after {
+        margin-right: 3px;
+        padding-left: 3px;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      display: inline-block;
     }
   }
 }
