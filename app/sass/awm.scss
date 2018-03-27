@@ -163,6 +163,25 @@ footer {
 }
 .top-nav-container {
   .topbar-list {
+    .topbar-dropdown {
+      top: 48px;
+      padding: 10px;
+      background-color: #fff;
+      box-shadow: 3px 4px 9px #888;
+      li {
+        border-radius: 0;
+        a {
+          color: #0079c1;
+          font-size: 14px;
+        }
+        &:hover {
+          background-color: #00aeef;
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
     .link {
       margin-right: 8px;
       padding: 7px 3px 3px 3px;
@@ -175,6 +194,9 @@ footer {
     .current {
       border-bottom: 4px solid $red-AA;
       padding: 22px 3px 18px;
+      .topbar-dropdown {
+        top: 62px;
+      }
     }
   }
 }
