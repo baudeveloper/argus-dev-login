@@ -15,8 +15,8 @@ $(function() {
 	var imgCompactSrc = siteCompactBanner.find(".site--banner-img").attr("src");
 	siteCompactBanner.css("backgroundImage", "url("+imgCompactSrc+")");
 
-	// $("a[data-toggle=modal][data-target]").click(function() {
-	// 	var target = $(this).attr("href");
-	// 	$("a[data-toggle=tab][href=" + target + "]").tab("show");
-	// });
 })();
+
+function goBack() {
+	window.history.back();
+}
